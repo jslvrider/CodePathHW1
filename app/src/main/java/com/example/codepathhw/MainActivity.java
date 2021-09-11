@@ -38,10 +38,8 @@ public class MainActivity extends AppCompatActivity {
         rvItems = findViewById(R.id.rvItems);
 
 
-        items = new ArrayList<>();
-        items.add("Buy milk");
-        items.add("Go to the gym");
-        items.add("Have fun!");
+        loadItems();
+
 
         ItemsAdapter.OnLongClickListener onLongClickListener = new ItemsAdapter.OnLongClickListener() {
             @Override
